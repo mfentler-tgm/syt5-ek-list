@@ -1,7 +1,6 @@
 Über die Nummern auf den Slaves kann man herausfinden ob das Inputs oder ausputs sind in der Dokumentation
 ->
 
-
 Codesys control for raspberry pi
 Tools/Package Manager
 
@@ -18,7 +17,7 @@ Die zip entpacken (nur das file ohne "No_modules" ist von bedeutung)
 
 Tools/Geräterepo, installieren
 
-IP von PI im Netzwerk finden:
+IP von PI im Netzwerk finden (dazu ins pria netzwerk wo der raspi auch drinnen ist):
 Tools/Update Raspberry -> Durchsuchen -> IP-Adresse merken
 Über Online/Einloggen, Gerät -> Bevorzugte geräte verwalten, neues hinzufügen -> IP vom pi
 
