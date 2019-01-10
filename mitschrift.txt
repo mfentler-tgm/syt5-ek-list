@@ -1,0 +1,34 @@
+Über die Nummern auf den Slaves kann man herausfinden ob das Inputs oder ausputs sind in der Dokumentation
+->
+
+
+Codesys control for raspberry pi
+Tools/Package Manager
+
+Pi SC SL
+GPIOS A/B -> Rechts klick -> Gerät aktualisieren -> GPIOS b+
+
+
+Rechtsklick E/A-Abbild bearbeiten -> Dort GPIO In/Output Adressen
+
+https://www.wago.com/at/io-systeme/feldbuskoppler-ethercat/p/750-354
+Download/Gerätedatein/ESI-Dateien
+
+Die zip entpacken (nur das file ohne "No_modules" ist von bedeutung)
+
+Tools/Geräterepo, installieren
+
+IP von PI im Netzwerk finden:
+Tools/Update Raspberry -> Durchsuchen -> IP-Adresse merken
+Über Online/Einloggen, Gerät -> Bevorzugte geräte verwalten, neues hinzufügen -> IP vom pi
+
+MAster (entscheidet welcher Slave jetzt empfangen darf)(der Master ist eine Software implementierung) (Der Slave erfordert Hardware) hinzufügen: 
+Rechte maustaste auf device -> gerät anhängen -> Ethercat -> Master
+
+EtherCAT Master -> Rechte M -> gerät anhängen -> 750-354 EtherCat Fieldbus
+-> Gerät anhängen -> Nach WAGO suchen -> 530, 530, 430, 430 -> Da es die so nicht gibt muss man die
+750-4xx/750-5xx wählen mit (8b in oder 8b out)
+
+-> 530 OUT
+-> 430 OUT
+
